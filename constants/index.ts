@@ -196,8 +196,8 @@ export const Skill_data = [
       height: 55,
     },
     {
-      skill_name: "Postger SQL",
-      Image: "/postger.png",
+      skill_name: "Postgres SQL",
+      Image: "/postgres.png",
       width: 70,
       height: 70,
     },
