@@ -3,7 +3,7 @@ import {
     Frontend_skill,
     Full_stack,
     Other_skill,
-    Skill_data,
+    // Skill_data,
   } from "@/constants";
 import React from 'react'
 
@@ -20,7 +20,7 @@ const Skills = () => {
     
     <SkillText />
 
-<div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+{/* <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 mt-4 items-center">
   {Skill_data.map((image, index) => (
     <SkillDataProvider
       key={index}
@@ -30,9 +30,9 @@ const Skills = () => {
       index={index}
     />
   ))}
-</div>
+</div> */}
 
-<div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+<div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 mt-4 items-center">
         {Frontend_skill.map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -43,7 +43,7 @@ const Skills = () => {
           />
         ))}
       </div>
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+      <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 mt-4 items-center">
         {Backend_skill.map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -54,7 +54,7 @@ const Skills = () => {
           />
         ))}
       </div>
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+      <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 mt-4 items-center">
         {Full_stack.map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -65,7 +65,7 @@ const Skills = () => {
           />
         ))}
       </div>
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+      <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 mt-4 items-center">
         {Other_skill.map((image, index) => (
           <SkillDataProvider
             key={index}
