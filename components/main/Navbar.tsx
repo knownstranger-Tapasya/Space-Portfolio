@@ -23,8 +23,6 @@ const Navbar = () => {
           <span className="font-extrabold ml-2 text-white md:text-transparent md:bg-clip-text md:bg-gradient-to-r md:from-purple-300 md:via-pink-300 md:to-white text-lg sm:text-xl tracking-wide">
             Tapasya Baidya
           </span>
-
-
         </a>
 
         {/* Desktop Menu */}

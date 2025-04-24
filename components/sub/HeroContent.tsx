@@ -60,7 +60,7 @@ className="flex flex-col-reverse md:flex-row items-center justify-center px-5 md
 
       <motion.div
         variants={slideInFromRight(0.8)}
-        className="w-full h-full flex justify-center items-center"
+        className="hidden md:flex w-full h-full justify-center items-center"
       >
         <Image
           src="/mainIconsdark.svg"
@@ -70,6 +70,7 @@ className="flex flex-col-reverse md:flex-row items-center justify-center px-5 md
           className="w-full max-w-[300px] md:max-w-[650px]"
         />
       </motion.div>
+
     </motion.div>
   );
 };

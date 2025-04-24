@@ -4,6 +4,7 @@ import type { PropsWithChildren } from "react";
 import Navbar from "@/components/main/Navbar";
 import { StarsCanvas } from "@/components/main/StarBackground";
 import "./globals.css";
+import Footer from "@/components/main/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
         <StarsCanvas />
         <Navbar />
         {children}
+        <Footer/>
       </body>
     </html>
   );
