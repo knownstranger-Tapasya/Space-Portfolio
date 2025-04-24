@@ -52,9 +52,11 @@ className="flex flex-col-reverse md:flex-row items-center justify-center px-5 md
         </motion.p>
         <motion.a
           variants={slideInFromLeft(1)}
+          href="/RESUME.pdf"
+          download="Tapasya&apos;s Resume" 
           className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
         >
-          Learn More!
+          Resume
         </motion.a>
       </div>
 
