@@ -20,7 +20,7 @@ const Navbar = () => {
             height={50}
             className="cursor-pointer hover:animate-[spin_6s_linear_infinite]"
           />
-          <span className="font-extrabold ml-2 text-transparent bg-clip-text bg-gradient-to-r from-gray-800 via-gray-600 to-black text-lg sm:text-xl tracking-wide">
+          <span className="font-extrabold ml-2 text-white md:text-transparent md:bg-clip-text md:bg-gradient-to-r md:from-purple-300 md:via-pink-300 md:to-white text-lg sm:text-xl tracking-wide">
             Tapasya Baidya
           </span>
 
