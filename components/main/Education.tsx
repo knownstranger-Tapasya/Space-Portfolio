@@ -11,7 +11,7 @@ const educationData = [
     subtitle: "Brainware University",
     location: "Barasat, North 24 Paraganas",
     time: "2020 - 2024",
-    description: "Graduated with First Class with 9.65 GPA. Learned Fullstack Dev, DSA, and more.",
+    description: "Graduated with First Class obtaining 9.65 GPA. Learned Fullstack Dev, DSA, and more.",
   },
   {
     title: "Senior Secondary (AISSCE)",
@@ -36,17 +36,15 @@ const Education = () => {
         Education
       </h1>
 
-      {/* Timeline Line */}
-      <div className="absolute top-36 left-1/2 transform -translate-x-1/2 h-[calc(100%-9rem)] w-1 bg-gray-600 z-0" />
+      {/* Vertical dotted timeline line */}
+      <div className="absolute top-45 left-1/2 transform -translate-x-1/2 h-280 w-[2px] bg-gradient-to-b from-purple-500 to-cyan-400 bg-[length:4px_10px] bg-repeat-y bg-dotted z-0 animate-pulse" />
 
-      {/* Grid Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-16 relative z-10">
+      <div className="flex flex-col gap-28 relative z-10">
         {educationData.map((item, i) => (
           <motion.div
             key={i}
-            className={`col-span-1 ${i % 2 === 0 ? "md:justify-self-start" : "md:justify-self-end"}`}
-            initial={{ opacity: 0, y: -50 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: -50, scale: 0.95 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.6, delay: i * 0.2 }}
             viewport={{ once: true }}
           >
@@ -57,7 +55,7 @@ const Education = () => {
               location={item.location}
               time={item.time}
               description={item.description}
-              isLeft={i % 2 === 0}
+              isLeft={i % 2 === 0} // Alternates left/right
             />
           </motion.div>
         ))}

@@ -28,6 +28,8 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-10 text-gray-200 border border-[#7042f861] bg-[#0300145e] px-6 py-2 rounded-full text-sm md:text-base">
           <a href="#about-me" className="cursor-pointer">About me</a>
+          <a href="#experience" className="cursor-pointer">Experience</a>
+          <a href="#education" className="cursor-pointer">Education</a>
           <a href="#skills" className="cursor-pointer">Skills</a>
           <a href="#projects" className="cursor-pointer">Projects</a>
         </div>
@@ -56,6 +58,20 @@ const Navbar = () => {
               className="text-lg font-semibold transform hover:scale-105 transition-all duration-300"
             >
               About me
+            </a>
+            <a 
+              href="#experience" 
+              onClick={() => setIsOpen(false)} 
+              className="text-lg font-semibold transform hover:scale-105 transition-all duration-300"
+            >
+              Experience
+            </a>
+            <a 
+              href="#education" 
+              onClick={() => setIsOpen(false)} 
+              className="text-lg font-semibold transform hover:scale-105 transition-all duration-300"
+            >
+              Education
             </a>
             <a 
               href="#skills" 
