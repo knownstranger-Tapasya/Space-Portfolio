@@ -18,7 +18,7 @@ const experienceData = [
     title: "Web Developer Intern",
     subtitle: "CodeClause",
     location: "Remote",
-    time: "Jan 2023 - Present",
+    time: "Feb 2024 - Mar 2024",
     description:
       "Worked on making various creative websites using cutting edge technologies.",
   },
@@ -27,12 +27,11 @@ const experienceData = [
 const Experience = () => {
   return (
     <section className="relative max-w-7xl mx-auto px-4 sm:px-8 py-20" id="experience">
-      <h1 className="text-5xl font-bold text-center mb-24 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 z-10 relative">
+      <h1 className="text-5xl font-bold text-center mb-24 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-500 z-10 relative">
         Experience
       </h1>
 
-       {/* Vertical dotted timeline line */}
-       <div className="absolute top-45 left-1/2 transform -translate-x-1/2 h-180 w-[2px] bg-gradient-to-b from-purple-500 to-cyan-400 bg-[length:4px_10px] bg-repeat-y bg-dotted z-0 animate-pulse" />
+       <div className="absolute top-45 left-1/2 transform -translate-x-1/2 h-180 w-[2px] bg-gradient-to-b from-purple-500 to-cyan-500 bg-[length:4px_10px] bg-repeat-y bg-dotted z-0 animate-pulse" />
 
       <div className="flex flex-col gap-20 relative z-10">
         {experienceData.map((item, i) => (
