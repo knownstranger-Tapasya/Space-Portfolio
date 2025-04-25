@@ -2,9 +2,9 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import type { PropsWithChildren } from "react";
 import Navbar from "@/components/main/Navbar";
-import { StarsCanvas } from "@/components/main/StarBackground";
 import "./globals.css";
 import Footer from "@/components/main/Footer";
+import StarsCanvas from "@/components/main/StarBackground";
 
 const inter = Inter({ subsets: ["latin"] });
 
