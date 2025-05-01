@@ -1,5 +1,5 @@
 import Education from '@/components/main/Education';
-import Encryption from '@/components/main/Encryption';
+// import Encryption from '@/components/main/Encryption';
 import Experience from '@/components/main/Experience';
 import Hero from '@/components/main/Hero'
 import Projects from '@/components/main/Projects';
@@ -13,7 +13,7 @@ export default function Home() {
         <Skills/>
         <Experience />
         <Education />
-        <Encryption/>
+        {/* <Encryption/> */}
         <Projects/>
       </div>
     </main>

@@ -16,8 +16,8 @@ const Navbar = () => {
           <Image
             src="/NavLogo.png"
             alt="logo"
-            width={50}
-            height={50}
+            width={30} 
+            height={30} 
             className="cursor-pointer hover:animate-[spin_6s_linear_infinite]"
           />
           <span className="font-extrabold ml-2 text-white md:text-transparent md:bg-clip-text md:bg-gradient-to-r md:from-purple-300 md:via-pink-300 md:to-white text-lg sm:text-xl tracking-wide">
