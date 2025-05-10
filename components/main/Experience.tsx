@@ -10,7 +10,7 @@ const experienceData = [
     title: "Systems Engineer Trainee",
     subtitle: "Surelia Infosystems Pvt.Ltd.",
     location: "Newtown, North 24 Paraganas",
-    time: "Present",
+    time: "Aug 2024 - Present",
     description:
       "Working with Python and SQL alongside DevOps and testing tools to build scalable solutions and streamline development in an Agile environment."
     },
