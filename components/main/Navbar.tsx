@@ -12,14 +12,14 @@ const Navbar = () => {
       <div className="w-full h-full flex items-center justify-between">
         
         {/* Logo */}
-        <a href="#about-me" className="flex items-center">
-          <Image
-            src="/NavLogo.png"
-            alt="logo"
-            width={30} 
-            height={30} 
-            className="cursor-pointer hover:animate-[spin_6s_linear_infinite]"
-          />
+        <a href="#about-me" className="flex items-center w-12 h-12 overflow-hidden">
+        <Image
+          src="/NavLogo.jpg"
+          alt="logo"
+          width={48}
+          height={48}
+          className="cursor-pointer rounded-full transform transition-transform duration-500 ease-out hover:scale-200 hover:translate-x--1 hover:translate-y-1"
+        />
           <span className="font-extrabold ml-2 text-white md:text-transparent md:bg-clip-text md:bg-gradient-to-r md:from-purple-300 md:via-pink-300 md:to-white text-lg sm:text-xl tracking-wide">
             Tapasya Baidya
           </span>
