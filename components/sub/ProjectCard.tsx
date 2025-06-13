@@ -10,7 +10,7 @@ interface Props {
   title: string;
   description: string;
   github: string;
-  live: string;
+  live?: string;
   index: number;
 }
 
