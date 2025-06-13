@@ -10,7 +10,7 @@ interface Props {
   title: string;
   description: string;
   github: string;
-  live: string;
+  live?: string;
   index: number;
 }
 
@@ -37,16 +37,18 @@ const ProjectCard = ({ src, title, description, github, live, index }: Props) =>
         <p className="text-sm">{description}</p>
       </div>
 
-      {/* Hover Overlay (Hidden initially) */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-cyan-500 bg-opacity-90 text-white p-4 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-all duration-300 z-20">
-        <a
-          href={github}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-10 h-10 flex items-center justify-center bg-white text-black rounded-full hover:bg-black hover:text-white transition"
-        >
-          <Github size={20} />
-        </a>
+     {/* Hover Overlay (Hidden initially) */}
+    <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-cyan-500 bg-opacity-90 text-white p-4 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-all duration-300 z-20">
+      <a
+        href={github}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-10 h-10 flex items-center justify-center bg-white text-black rounded-full hover:bg-black hover:text-white transition"
+      >
+        <Github size={20} />
+      </a>
+
+      {live && (
         <a
           href={live}
           target="_blank"
@@ -55,7 +57,9 @@ const ProjectCard = ({ src, title, description, github, live, index }: Props) =>
         >
           <ExternalLink size={20} />
         </a>
-      </div>
+      )}
+    </div>
+
     </motion.div>
   );
 };
