@@ -7,20 +7,29 @@ import TimelineCard from "../sub/TimelineCard";
 
 const experienceData = [
   {
-    title: "Systems Engineer Trainee",
-    subtitle: "Surelia Infosystems Pvt.Ltd.",
-    location: "Newtown, North 24 Paraganas",
-    time: "Aug 2024 - Present",
-    description:
-      "Working with Python and SQL alongside DevOps and testing tools to build scalable solutions and streamline development in an Agile environment."
-    },
+    title: "Systems Engineer Trainee → Systems Engineer",
+    subtitle: "Surelia Infosystems Pvt. Ltd.",
+    location: "Newtown, North 24 Parganas",
+    time: "Aug 2024 – Present",
+    description: (
+      <>
+        <p className="mb-4">
+          <strong>Systems Engineer (Apr 2025 – Present):</strong><br />
+          Build scalable backend services using Python, Kafka, Redis (ElastiCache), and PostgreSQL, deployed on AWS EC2 with YAML-based configurations. Work in Agile teams to deliver reliable, production-grade systems with strong focus on code quality, system efficiency, and collaboration.</p>
+        <p>
+          <strong>Systems Engineer Trainee (Aug 2024 – Mar 2025):</strong><br />
+          Contributed to internal tooling and backend modules using Python, PostgreSQL, and Shell scripting. Developed familiarity with version control using Git and Agile development practices through active participation in sprints and code reviews.
+        </p>
+      </>
+    ),
+  },
   {
     title: "Web Developer Intern",
     subtitle: "CodeClause",
     location: "Remote",
-    time: "Feb 2024 - Mar 2024",
+    time: "Feb 2024 – Mar 2024",
     description:
-      "Worked on making various creative websites using cutting edge technologies.",
+      "Built responsive, interactive websites using HTML, CSS, and JavaScript. Focused on modern UI practices and delivered clean, cross-browser-compatible designs.",
   },
 ];
 
@@ -31,7 +40,7 @@ const Experience = () => {
         Experience
       </h1>
 
-       <div className="absolute top-45 left-1/2 transform -translate-x-1/2 h-180 w-[2px] bg-gradient-to-b from-purple-500 to-cyan-500 bg-[length:4px_10px] bg-repeat-y bg-dotted z-0 animate-pulse" />
+      <div className="absolute top-45 left-1/2 transform -translate-x-1/2 h-215 w-[2px] bg-gradient-to-b from-purple-500 to-cyan-500 bg-[length:4px_10px] bg-repeat-y bg-dotted z-0 animate-pulse" />
 
       <div className="flex flex-col gap-20 relative z-10">
         {experienceData.map((item, i) => (
