@@ -51,51 +51,51 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden mt-2 px-6 py-4 bg-gradient-to-r from-violet-950 to-indigo-800 text-white rounded-3xl shadow-2xl transform transition-all duration-500 ease-in-out flex flex-col items-center gap-6 w-[80%] sm:w-[60%] mx-auto">
-            <a 
-              href="#about-me" 
-              onClick={() => setIsOpen(false)} 
-              className="text-lg font-semibold transform hover:scale-105 transition-all duration-300"
-            >
-              About me
-            </a>
-            <a 
-              href="#experience" 
-              onClick={() => setIsOpen(false)} 
-              className="text-lg font-semibold transform hover:scale-105 transition-all duration-300"
-            >
-              Experience
-            </a>
-            <a 
-              href="#education" 
-              onClick={() => setIsOpen(false)} 
-              className="text-lg font-semibold transform hover:scale-105 transition-all duration-300"
-            >
-              Education
-            </a>
-            <a 
-              href="#skills" 
-              onClick={() => setIsOpen(false)} 
-              className="text-lg font-semibold transform hover:scale-105 transition-all duration-300"
-            >
-              Skills
-            </a>
-            <a 
-              href="#projects" 
-              onClick={() => setIsOpen(false)} 
-              className="text-lg font-semibold transform hover:scale-105 transition-all duration-300"
-            >
-              Projects
-            </a>
-            
-            {/* Social Icons */}
-            <div className="flex gap-4 pt-4 justify-center">
-              {Socials.map((social) => (
-                <a key={social.name} href={social.link} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-all duration-300">
-                  <Image src={social.src} alt={social.name} width={24} height={24} />
-                </a>
-              ))}
-            </div>
+          <div className="md:hidden mt-2 px-6 py-4 bg-gradient-to-r from-violet-950 to-indigo-800 text-white rounded-3xl shadow-2xl transform transition-all duration-500 ease-in-out flex flex-col items-center gap-6 w-[80%] sm:w-[60%] mx-auto z-[100]">
+              <a 
+                href="#about-me" 
+                onClick={() => setIsOpen(false)} 
+                className="text-lg font-semibold transform hover:scale-105 transition-all duration-300"
+              >
+                About me
+              </a>
+              <a 
+                href="#experience" 
+                onClick={() => setIsOpen(false)} 
+                className="text-lg font-semibold transform hover:scale-105 transition-all duration-300"
+              >
+                Experience
+              </a>
+              <a 
+                href="#education" 
+                onClick={() => setIsOpen(false)} 
+                className="text-lg font-semibold transform hover:scale-105 transition-all duration-300"
+              >
+                Education
+              </a>
+              <a 
+                href="#skills" 
+                onClick={() => setIsOpen(false)} 
+                className="text-lg font-semibold transform hover:scale-105 transition-all duration-300"
+              >
+                Skills
+              </a>
+              <a 
+                href="#projects" 
+                onClick={() => setIsOpen(false)} 
+                className="text-lg font-semibold transform hover:scale-105 transition-all duration-300"
+              >
+                Projects
+              </a>
+              
+              {/* Social Icons */}
+              <div className="flex gap-4 pt-4 justify-center flex-wrap">
+                {Socials.map((social) => (
+                  <a key={social.name} href={social.link} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-all duration-300">
+                    <Image src={social.src} alt={social.name} width={24} height={24} />
+                  </a>
+                ))}
+              </div>
           </div>
         )}
 

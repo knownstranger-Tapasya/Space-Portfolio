@@ -19,7 +19,7 @@ const Footer = () => {
           
           {/* Community */}
           <div className="min-w-[200px] flex flex-col items-center">
-            <div className="relative z-50 w-full bg-transparent text-gray-200 p-4">
+            <div className="w-full bg-transparent text-gray-200 p-4">
               <div className="flex flex-col items-center">
                  <div className="font-bold text-lg">Community</div>
 
@@ -59,7 +59,7 @@ const Footer = () => {
 
         {/* Social Media */}
         <div className="min-w-[200px] flex flex-col items-center">
-          <div className="relative z-50 w-full bg-transparent text-gray-200 p-4">
+          <div className="w-full bg-transparent text-gray-200 p-4">
             <div className="flex flex-col items-center">
               <div className="font-bold text-lg">Social Media</div>
 
@@ -99,7 +99,7 @@ const Footer = () => {
 
           {/* Contact */}
           <div className="min-w-[200px] flex flex-col items-center">
-            <div className="relative z-50 w-full bg-transparent text-gray-200 p-4">
+            <div className="w-full bg-transparent text-gray-200 p-4">
               <div className="flex flex-col items-center">
                 <div className="font-bold text-lg mb-2">Contact</div>
                 <a
