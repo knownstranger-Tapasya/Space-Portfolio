@@ -13,7 +13,7 @@ import { BsEnvelope, BsCalendar2Check } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-6">
+    <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-6 relative z-30">
       <div className="w-full flex flex-col items-center justify-center mx-auto">
         <div className="w-full flex flex-row items-center justify-around flex-wrap">
           
