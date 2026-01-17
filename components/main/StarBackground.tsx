@@ -20,7 +20,7 @@ const StarBackground = () => {
       } else {
         throw new Error('inSphere not available');
       }
-    } catch (error) {
+    } catch {
       // Fallback: manually generate points if maath fails
       for (let i = 0; i < numPoints; i++) {
         const theta = Math.random() * Math.PI * 2;
