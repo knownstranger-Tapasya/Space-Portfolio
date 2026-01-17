@@ -9,9 +9,39 @@ import * as THREE from "three";
 
 const StarBackground = () => {
     const ref = useRef<THREE.Points>(null!);
-  const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(5000), { radius: 1.2 })
-  );
+  const [sphere] = useState(() => {
+    const numPoints = 5000;
+    const positions = new Float32Array(numPoints * 3);
+    
+    // Generate points in a sphere
+    try {
+      if (random && typeof random.inSphere === 'function') {
+        random.inSphere(positions, { radius: 1.2 });
+      } else {
+        throw new Error('inSphere not available');
+      }
+    } catch (error) {
+      // Fallback: manually generate points if maath fails
+      for (let i = 0; i < numPoints; i++) {
+        const theta = Math.random() * Math.PI * 2;
+        const phi = Math.acos(2 * Math.random() - 1);
+        const radius = 1.2 * Math.cbrt(Math.random());
+        const i3 = i * 3;
+        positions[i3] = radius * Math.sin(phi) * Math.cos(theta);
+        positions[i3 + 1] = radius * Math.sin(phi) * Math.sin(theta);
+        positions[i3 + 2] = radius * Math.cos(phi);
+      }
+    }
+    
+    // Validate that we don't have NaN values - this is critical for THREE.js
+    for (let i = 0; i < positions.length; i++) {
+      if (!Number.isFinite(positions[i])) {
+        positions[i] = 0;
+      }
+    }
+    
+    return positions;
+  });
 
   useFrame((state, delta) => {
     ref.current.rotation.x -= delta/10;
@@ -41,7 +71,7 @@ const StarBackground = () => {
 };
 
 const StarsCanvas = () => (
-    <div className="w-full h-auto fixed inset-0 z-[20]">
+    <div className="w-full h-auto fixed inset-0 z-[20] pointer-events-none">
         <Canvas camera={{position: [0, 0, 1]}}>
         <Suspense fallback={null}>
             <StarBackground />

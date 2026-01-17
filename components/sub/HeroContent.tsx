@@ -80,6 +80,7 @@ className="flex flex-col-reverse md:flex-row items-center justify-center px-5 md
           height={650}
           width={650}
           className="w-full max-w-[300px] md:max-w-[650px]"
+          style={{ height: "auto" }}
         />
       </motion.div>
     </motion.div>

@@ -259,6 +259,18 @@ export const Skill_data = [
       width: 60,
       height: 60,
     },
+    {
+      skill_name: "DBeaver",
+      Image: "/dbeaver.png",
+      width: 60,
+      height: 60,
+    },
+    {
+      skill_name: "Postman",
+      Image: "/postman.jpg",
+      width: 60,
+      height: 60,
+    },
   ];
   
   
